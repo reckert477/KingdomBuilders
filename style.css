@@ -86,7 +86,13 @@ body, html {
     text-align: center;
 }
 
-
+.footer button {
+    font-family: inherit;
+    border-radius: 9px;
+    text-decoration: none;
+    border: none;
+    background-color: #C65555;
+}
 
 #buildings {
     text-align: center;
