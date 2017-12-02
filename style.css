@@ -1,0 +1,88 @@
+
+body, html {
+    position: relative;
+    height: 100%;
+    font-size: 13px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.header{
+    text-align: center;
+    width: 100%;
+    /*padding: 1%;*/
+    box-sizing: border-box;
+}
+
+/*.timer {
+    font-family: inherit;
+    border-radius: 12px;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    background-color: #C65555;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-shadow: 2px 2px 2px #aaa;
+}*/
+
+.header h1{
+    font-family: 'Spectral SC', serif;
+    font-size: 35px;
+    text-shadow: 2px 2px 2px #aaa;
+}
+
+.left {
+    float: left;
+    width: 15%;
+    height: 70%;
+    padding: 1%;
+
+}
+.center {
+    float: center;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+}
+
+.right {
+    float: right;
+    width: 15%;
+    height: 70%;
+    padding: 1%;
+}
+
+.footer{
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.button {
+    font-family: inherit;
+    border-radius: 7px;
+    text-decoration: none;
+    border: none;
+    /*box-shadow: 1px 1px 1px #696969;*/
+}
+
+#buildings {
+    text-align: center;
+    list-style-type: none;
+}
+
+#classes {
+    text-align: left;
+    list-style-type: none;
+    /*margin-left: 25%;*/
+    padding-right: 1%;
+}
+
+#resources {
+    text-align: left;
+    list-style-type: none;
+    /*margin-left: 25%;*/
+    padding-right: 1%;
+}
+

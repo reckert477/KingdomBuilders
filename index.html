@@ -4,50 +4,65 @@
 	<script src="/socket.io/socket.io.js"></script>
 	<!-- This is my example client-side javascript that uses socket.io -->
 	<script src="/javascripts/clientSocket.js"></script>	
-	<body><center>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:bold|Spectral+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel=stylesheet>
+	<body>
+		<div class="header">
+        	<h1> Kingdom Builders</h1>
+        	<p><b>Events</b></p>
+			<p id="eventArea">The day is sunny and everyone is in a good mood.</p>
+    	</div>
 
+    	<div class = "left">
+			<p><b>Available Buildings</b></p>
+			<button onclick="createMill()" type="button" id="submit_button6">Create Mill (cost 15W 10F)</button>
+			<br>
+			<button onclick="createFarm()" type="button" id="submit_button7">Create Farm (cost 10W 15F)</button>
+			<br>
+			<button onclick="createSilo()" type="button" id="submit_button8">Create Silo (cost 10W 10F)</button>
 
-		Food Count: <p id="foodPlace">0</p> 
-		Wood Count: <p id="woodPlace">0</p>
-		Farmer Count: <p id="farmerPlace">0</p>
-		Woodsman Count: <p id="woodsmanPlace">0</p> 
-		Militia Count: <p id="militiaPlace">0</p> 
-		<br>
-
-
-		<p><b>Roles</b></p>
-		<button onclick="becomeFarmer()" type="button" id="submit_button3">Farmer</button>
-		<button onclick="becomeWoodsman()" type="button" id="submit_button4">Woodsman</button>
-		<button onclick="becomeMilitia()" type="button" id="submit_button5">Militia</button>
-		<br>
-		<br>
-
-		<p><b>Buildings Built</b></p>
-		<p id="built_section">Town Hall</p>
-		<br>
-
-		<p><b>Available Buildings</b></p>
-		<button onclick="createMill()" type="button" id="submit_button6">Create Mill (cost 15W 10F)</button>
-		<button onclick="createFarm()" type="button" id="submit_button7">Create Farm (cost 10W 15F)</button>
-		<button onclick="createSilo()" type="button" id="submit_button8">Create Silo (cost 10W 10F)</button>
-		<br>
-		<br>
-
-
-		<p><b>Events</b></p>
-		<p id="eventArea">The day is sunny and everyone is in a good mood.</p>
-		<br>
-
-
-		<p><b>Messages</b></p>
-		<div id="nameStuff">
-			Enter your name to begin messaging: <input type="text" id="name_input" value=""/><br>
-			<button onclick="nameSubmit()" type="button" id="submit_button2">Submit</button><br>
+			<p><b>Buildings Built</b></p>
+			<p id="built_section">Town Hall</p>
+			<br>
 		</div>
-		<div id="messageStuff">
-			Message: <input type="text" id="input_area" value=""/><br>
-			<button onclick="buttonClicked()" type="button" id="submit_button">Submit</button><br>	
+
+
+    	<div class= "right">
+			<p>Food Count: <span id="foodPlace">0</span></p>
+			<p>Wood Count: <span id="woodPlace">0</span></p>
+			<p>Farmer Count: <span id="farmerPlace">0</span></p>
+			<p>Woodsman Count: <span id="woodsmanPlace">0</span></p>
+			<p>Militia Count: <span id="militiaPlace">0</span></p>
+
+			<p><b>Messages</b></p>
+			<div id="nameStuff">
+				<p>Enter your name to begin messaging:</p>
+				<input type="text" id="name_input" value=""/><br>
+				<button onclick="nameSubmit()" type="button" id="submit_button2">Submit</button><br>
+			</div>
+			<div id="messageStuff">
+				<p>Message:</p> 
+				<input type="text" id="input_area" value=""/><br>
+				<button onclick="buttonClicked()" type="button" id="submit_button">Submit</button><br>	
+			</div>
+			<p id="displayArea"></p>
 		</div>
-		<p id="displayArea"></p>
-	</center></body>
+
+		<div class = "center">
+			
+			<iframe id = "video" width=54% height=45% src="https://www.youtube.com/embed/SO1QfFmn7pg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			
+		</div>
+		<div class = "footer">
+			<p><b>Roles</b></p>
+			<button onclick="becomeFarmer()" type="button" id="submit_button3">Farmer</button>
+			<button onclick="becomeWoodsman()" type="button" id="submit_button4">Woodsman</button>
+			<button onclick="becomeMilitia()" type="button" id="submit_button5">Militia</button>
+			<br>
+		</div>
+
+
+		
+	</body>
 </html>
