@@ -37,6 +37,21 @@ body, html {
     padding: 1%;
 
 }
+
+.left h3{
+    font-family: 'Spectral SC', serif;
+    text-shadow: 2px 2px 2px #aaa;
+}
+
+.left button {
+    font-family: inherit;
+    border-radius: 9px;
+    text-decoration: none;
+    border: none;
+    background-color: #C65555;
+    /*box-shadow: 1px 1px 1px #696969;*/
+}
+
 .center {
     float: center;
     text-align: center;
@@ -51,6 +66,18 @@ body, html {
     height: 70%;
     padding: 1%;
 }
+.right h3{
+    font-family: 'Spectral SC', serif;
+    text-shadow: 2px 2px 2px #aaa;
+}
+
+.right button {
+    font-family: inherit;
+    border-radius: 9px;
+    text-decoration: none;
+    border: none;
+    background-color: #C65555;
+}
 
 .footer{
     width: 100%;
@@ -59,13 +86,7 @@ body, html {
     text-align: center;
 }
 
-.button {
-    font-family: inherit;
-    border-radius: 7px;
-    text-decoration: none;
-    border: none;
-    /*box-shadow: 1px 1px 1px #696969;*/
-}
+
 
 #buildings {
     text-align: center;

@@ -15,36 +15,52 @@
     	</div>
 
     	<div class = "left">
-			<p><b>Available Buildings</b></p>
-			<button onclick="createMill()" type="button" id="submit_button6">Create Mill (cost 15W 10F)</button>
+			<h3>Available Buildings</h3>
+			<button onclick="createMill()" type="button" id="submit_button6">Create Mill</button>
 			<br>
-			<button onclick="createFarm()" type="button" id="submit_button7">Create Farm (cost 10W 15F)</button>
+			cost 15W 10F
 			<br>
-			<button onclick="createSilo()" type="button" id="submit_button8">Create Silo (cost 10W 10F)</button>
-
-			<p><b>Buildings Built</b></p>
+			<br>
+			<button onclick="createFarm()" type="button" id="submit_button7">Create Farm</button>
+			<br>
+			cost 10W 15F
+			<br>
+			<br>
+			<button onclick="createSilo()" type="button" id="submit_button8">Create Silo</button>
+			<br>
+			cost 10W 10F
+			<h3>Buildings Built</h3>
 			<p id="built_section">Town Hall</p>
 			<br>
 		</div>
 
 
     	<div class= "right">
+    		<h3>Resources</h3>
 			<p>Food Count: <span id="foodPlace">0</span></p>
 			<p>Wood Count: <span id="woodPlace">0</span></p>
+			<h3>Class Distribution</h3>
 			<p>Farmer Count: <span id="farmerPlace">0</span></p>
 			<p>Woodsman Count: <span id="woodsmanPlace">0</span></p>
 			<p>Militia Count: <span id="militiaPlace">0</span></p>
 
-			<p><b>Messages</b></p>
+			<h3>Messages</h3>
 			<div id="nameStuff">
-				<p>Enter your name to begin messaging:</p>
-				<input type="text" id="name_input" value=""/><br>
+				Enter your name to begin messaging:
+				<br>
+				<input type="text" id="name_input" value=""/>
+				<br>
+				<br>
 				<button onclick="nameSubmit()" type="button" id="submit_button2">Submit</button><br>
 			</div>
+			<br>
 			<div id="messageStuff">
-				<p>Message:</p> 
+				Message:
+				<br>
 				<input type="text" id="input_area" value=""/><br>
-				<button onclick="buttonClicked()" type="button" id="submit_button">Submit</button><br>	
+				<button onclick="buttonClicked()" type="button" id="submit_button">Submit</button>
+				<br>
+				<br>
 			</div>
 			<p id="displayArea"></p>
 		</div>
